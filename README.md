@@ -2,6 +2,13 @@
 
 > A Vue.js project
 
+## 说明
+- 使用vue-cli创建项目
+- 使用express-generator创建node服务
+- 启动vue项目，配置config/index文件，中转到node层，由node层请求数据，返回到页面
+
+
+
 ## Build Setup
 
 ``` bash
@@ -26,5 +33,3 @@ npm run e2e
 # run all tests
 npm test
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
