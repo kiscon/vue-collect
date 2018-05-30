@@ -3,7 +3,7 @@
 * */
 var config = {
   request_url: {
-    pay_base_url: '',
+    base_url: '',
   },
   port:3000
 }
