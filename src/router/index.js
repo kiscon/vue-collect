@@ -1,6 +1,16 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Products from '@/components/products'
+
+const Products = (resolve) => {
+  import('@/components/products').then((module) => {
+    resolve(module)
+  })
+}
+const Movie = (resolve) => {
+  import('@/components/movie').then((module) => {
+    resolve(module)
+  })
+}
 
 Vue.use(Router)
 
@@ -11,6 +21,11 @@ export default new Router({
       path: '/',
       name: 'Products',
       component: Products
+    },
+    {
+      path: '/movie',
+      name: 'Movie',
+      component: Movie
     }
   ]
 })

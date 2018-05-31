@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 var ejs = require('ejs')
 var index = require('./routes/index');
 var productSve = require('./routes/productSve');
+var movieSve = require('./routes/movieSve');
 
 var app = express();
 
@@ -28,6 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/productSve', productSve);
+app.use('/movieSve', movieSve);
 
 
 

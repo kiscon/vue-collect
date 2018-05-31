@@ -1,7 +1,7 @@
 var express = require('express')
 var router = express.Router()
 var request = require('request')
-let config = require('../../config/config');
+var config = require('../../config/config')
 
 
 function Product(id, title, price, rating, desc, categories) {

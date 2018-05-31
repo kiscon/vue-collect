@@ -13,6 +13,9 @@ module.exports = {
     proxyTable: {
       '/productSve/*':{
         target:'http://localhost:3000'
+      },
+      '/movieSve/*':{
+        target:'http://localhost:3000'
       }
     },
 
