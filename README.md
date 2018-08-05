@@ -31,27 +31,79 @@ superagent
 - [SuperAgent中文使用文档](https://cnodejs.org/topic/5378720ed6e2d16149fa16bd)
 
 
-## Build Setup
+## 配置node_modles/@vue/cli-service/lib/options.js
 
-``` bash
-# install dependencies
-npm install
+- config/index.js 是vue-cli3之前的配置
 
-# serve with hot reload at localhost:8080
-npm run dev
+- 打包路径配置
+```
+ // project deployment base
+  baseUrl: '/',
 
-# build for production with minification
-npm run build
+  // where to output built files
+  // outputDir: 'dist',
+  outputDir: 'server/public/',
 
-# build for production and view the bundle analyzer report
-npm run build --report
+  // where to put static assets (js/css/img/font/...)
+  assetsDir: 'static',
 
-# run unit tests
-npm run unit
+  // filename for index.html (relative to outputDir)
+  // indexPath: 'index.html',
+  indexPath: '../views/index.html',
+```
+- 代理到node服务
+```
+  devServer: {
+      /*
+       open: process.platform === 'darwin',
+       host: '0.0.0.0',
+       port: 8080,
+       https: false,
+       hotOnly: false,
+       proxy: null, // string | Object
+       before: app => {}
+       */
+      host: 'localhost',
+      https: false,
+      hotOnly: false,
+      proxy: {
+        '/productSve/*':{
+          target:'http://localhost:3000'
+        },
+        '/movieSve/*':{
+          target:'http://localhost:3000'
+        }
+      },
+    }
+```
+- 禁用eslint检测
+```
+  // whether to use eslint-loader
+  lintOnSave: false,
+```
 
-# run e2e tests
-npm run e2e
+## 访问打包后的文件
+```
+  开启node服务，在浏览器输入
+  http://localhost:3000/#/
+```
 
-# run all tests
-npm test
+## Project setup
+```
+yarn install
+```
+
+### Compiles and hot-reloads for development
+```
+yarn run serve
+```
+
+### Compiles and minifies for production
+```
+yarn run build
+```
+
+### Lints and fixes files
+```
+yarn run lint
 ```

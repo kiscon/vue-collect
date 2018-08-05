@@ -12,7 +12,7 @@ var movieSve = require('./routes/movieSve');
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'public'));
+app.set('views', path.join(__dirname, 'views'));
 app.engine('.html',ejs.__express);
 app.set('view engine', 'html');
 
@@ -28,7 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/', index);
-app.use('/productSve', productSve);
+app.use('/api/productSve', productSve);
 app.use('/movieSve', movieSve);
 
 
