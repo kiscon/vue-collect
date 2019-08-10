@@ -4,7 +4,7 @@ module.exports = {
   outputDir: process.env.outputDir || 'dist',
   assetsDir: 'static', // 放置生成的静态资源
   runtimeCompiler: false,
-  productionSourceMap: true,
+  productionSourceMap: false,
   lintOnSave: true,
   configureWebpack: {
     resolve: {
