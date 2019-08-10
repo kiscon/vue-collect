@@ -1,24 +1,40 @@
 const path = require('path')
 module.exports = {
   publicPath: '/',
-	outputDir: process.env.outputDir || 'dist',
-	// assetsDir: '',
-	// runtimeCompiler: false,
-	// productionSourceMap: false,
-	lintOnSave: true,
-	devServer: {
-		host: 'localhost',
-		https: false,
-		hotOnly: false,
-		proxy: {
-			'/api': {
-				target: 'http://localhost:3000',
-				changeOrigin: true,
-				pathRewrite: {
-					'^/api': '/'
-				}
-			}
-		}
+  outputDir: process.env.outputDir || 'dist',
+  assetsDir: 'static', // 放置生成的静态资源
+  runtimeCompiler: false,
+  productionSourceMap: true,
+  lintOnSave: true,
+  configureWebpack: {
+    resolve: {
+      alias: {
+      '@': path.resolve(__dirname, './src'),
+      }
+    },
+    module: {
+      rules: [
+        {
+          test: /\.(js|vue)$/,
+          use: 'eslint-loader'
+        }
+      ]
+    }
+  },
+  devServer: {
+    host: 'localhost',
+    https: false,
+    hotOnly: false,
+    historyApiFallback: true,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': '/'
+        }
+      }
+    }
   },
   chainWebpack: config => {
     const types = config.module.rule('scss').oneOfs.store
