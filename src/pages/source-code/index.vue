@@ -1,5 +1,6 @@
 <template>
   <div class="code-page">
+    <pageHead />
     <pre>
       Vue 初始化过程：new Vue(options) -> 执行构造函数 _init()方法 初始化vue实例  初始化内容包含以下内容 执行以下一系列方法
       1、initLifecycle()：
@@ -48,8 +49,8 @@
   </div>
 </template>
 <script>
-export default {
-}
+  export default {
+  }
 </script>
 <style lang="scss" scoped>
   .code-page{
