@@ -15,7 +15,7 @@ const getRoutes = (context, ignore) => {
   return routes
 }
 
-let routes = getRoutes(require.context('./', false, /\.js$/), './index.js')
+const routes = getRoutes(require.context('./', false, /\.js$/), './index.js')
 console.log(routes)
 
 const router = new VueRouter({

@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import store from './store'
 import Components from './components/index'
 
 Vue.use(Components)
@@ -10,5 +11,6 @@ Vue.config.silent = false // 默认false，设置为true时，取消Vue所有的
 
 new Vue({
   router,
+  store,
   render: h => h(App),
 }).$mount('#app')

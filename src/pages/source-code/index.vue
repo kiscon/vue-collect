@@ -49,7 +49,14 @@
   </div>
 </template>
 <script>
+  import { mapGetters } from 'vuex'
   export default {
+    computed: {
+      ...mapGetters(['userInfo'])
+    },
+    mounted() {
+      console.log(this.userInfo)
+    }
   }
 </script>
 <style lang="scss" scoped>
