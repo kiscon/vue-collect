@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import Components from './components/index'
+import '@/common/directives/v-outsideclick.js'
 
 Vue.use(Components)
 
