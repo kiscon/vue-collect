@@ -1,15 +1,20 @@
 <template>
   <div class="page-head">
-    {{$route.meta.title}}
+    {{pageTitle}}
   </div>
 </template>
 <script>
 export default {
-  name: 'pageHead'
+  name: 'pageHead',
+  data() {
+    return {
+      pageTitle: this.$route.meta.title
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>
-  .page-head{
+  .page-head {
     box-sizing: border-box;
     width: 100%;
     height: 28px;

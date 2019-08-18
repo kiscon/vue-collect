@@ -51,12 +51,13 @@
   }
 </script>
 <style lang="scss" scoped>
-  .user-info{
-    li{
+  .user-info {
+    li {
       line-height: 26px;
     }
   }
-  .btn{
+
+  .btn {
     margin-top: 4px;
   }
 </style>

@@ -53,7 +53,7 @@
   }
 </script>
 <style lang="scss" scoped>
-  .code-page{
+  .code-page {
     text-align: left;
   }
 </style>
