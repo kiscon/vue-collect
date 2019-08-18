@@ -37,6 +37,8 @@ function createDocumentHandler(el, binding, vnode) {
   }
 }
 
+// https://cn.vuejs.org/v2/guide/custom-directive.html
+
 Vue.directive('outsideclick', {
   bind(el, binding, vnode) {
     console.log(el, binding, vnode)
