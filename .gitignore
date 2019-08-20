@@ -2,6 +2,7 @@
 node_modules
 /dist
 /cypress
+.nyc_output
 
 # local env files
 .env.local
