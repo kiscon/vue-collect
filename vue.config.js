@@ -40,7 +40,7 @@ module.exports = {
     const types = config.module.rule('scss').oneOfs.store
     types.forEach(type => {
       type
-        .use('sass-resource-loader')
+        .use('sass-resources-loader')
         .loader('sass-resources-loader')
         .options({
           resources: path.join(__dirname, './src/assets/sass/index.scss'),
