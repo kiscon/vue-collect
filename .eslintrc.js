@@ -17,8 +17,8 @@ module.exports = {
     'object-curly-spacing': 0,
     'space-before-function-paren': [0, 'always'],
     'vue/no-use-v-if-with-v-for': 0,
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-console': 'off',
+    'no-debugger': 'off'
   },
   parserOptions: {
     parser: 'babel-eslint'
