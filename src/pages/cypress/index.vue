@@ -21,8 +21,8 @@
     <img src="./result.png" alt="测试结果">
     <a
       target="_blank"
-      href="https://docs.cypress.io/zh-cn/guides/getting-started/installing-cypress.html#npm-install">
-      cypress配置地址
+      href="https://docs.cypress.io/guides/overview/why-cypress#In-a-nutshell">
+      cypress官方文档
     </a>
   </div>
 </template>

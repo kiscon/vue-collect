@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 import Components from './components/index'
 import '@/common/directives/v-outsideclick.js'
+import '@/assets/sass/index.scss'
 
 Vue.use(Components)
 

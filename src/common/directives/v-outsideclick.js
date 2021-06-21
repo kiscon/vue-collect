@@ -58,7 +58,7 @@ Vue.directive('outsideclick', {
     el[ctx].bindingFn = binding.value
   },
   unbind(el) {
-    let len = nodeList.length
+    const len = nodeList.length
     for (let i = 0; i < len; i++) {
       if (nodeList[i][ctx].id === el[ctx].id) {
         nodeList.splice(i, 1)
