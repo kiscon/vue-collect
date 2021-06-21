@@ -37,15 +37,15 @@ module.exports = {
     }
   },
   chainWebpack: config => {
-    const types = config.module.rule('scss').oneOfs.store
-    types.forEach(type => {
-      type
-        .use('sass-resource-loader')
-        .loader('sass-resources-loader')
-        .options({
-          resources: path.join(__dirname, './src/assets/sass/index.scss'),
-        })
-        .end()
-    })
+    // const types = config.module.rule('scss').oneOfs.store
+    // types.forEach(type => {
+    //   type
+    //     .use('sass-resources-loader')
+    //     .loader('sass-resources-loader')
+    //     .options({
+    //       resources: path.join(__dirname, './src/assets/sass/index.scss'),
+    //     })
+    //     .end()
+    // })
   }
 }
