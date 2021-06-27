@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/kiscon/vue-collect/branch/master/graph/badge.svg?token=SdHvb88Yb9)](https://codecov.io/gh/kiscon/vue-collect)
+
 # vue-note
 
 ## Project setup
