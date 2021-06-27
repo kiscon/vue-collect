@@ -1,10 +1,10 @@
 [![codecov](https://codecov.io/gh/kiscon/vue-collect/branch/master/graph/badge.svg?token=SdHvb88Yb9)](https://codecov.io/gh/kiscon/vue-collect)
 
-# vue-note
+# vue-collect
 
 ## Project setup
 ```
-yarn install
+yarn
 ```
 
 ### Compiles and hot-reloads for development
