@@ -1,13 +1,13 @@
 langeuage: node_js
 node_js: 
-  - '10'
+  - '14'
 
 cache:
   directories:
     - node_modules
 
 install:
-  - yarn install
+  - npm install
 
 script:
   - npm run test:unit
