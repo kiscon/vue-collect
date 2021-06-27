@@ -1,4 +1,4 @@
-[![codecov](https://codecov.io/gh/kiscon/vue-collect/branch/master/graph/badge.svg?token=SdHvb88Yb9)](https://codecov.io/gh/kiscon/vue-collect)
+![https://api.travis-ci.com/kiscon/vue-collect.svg?branch=master&status=passed](https://api.travis-ci.com/kiscon/vue-collect.svg?branch=master&status=passed)[![codecov](https://codecov.io/gh/kiscon/vue-collect/branch/master/graph/badge.svg?token=SdHvb88Yb9)](https://codecov.io/gh/kiscon/vue-collect)
 
 # vue-collect
 
