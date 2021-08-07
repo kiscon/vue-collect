@@ -11,21 +11,20 @@ module.exports = {
       alias: {
       '@': path.resolve(__dirname, './src'),
       }
-    },
-    module: {
-      rules: [
-        {
-          test: /\.(js|vue)$/,
-          use: 'eslint-loader'
-        }
-      ]
     }
   },
   devServer: {
-    host: 'localhost',
+    host: '0.0.0.0',
     https: false,
-    hotOnly: false,
+    hotOnly: false, // 热更新
     historyApiFallback: true,
+    open: false, // 自动开启浏览器
+    compress: false, // 开启压缩
+    port: 8003, // 端口
+    overlay: {
+      warnings: true,
+      errors: true
+    },
     proxy: {
       '/api': {
         target: 'http://localhost:3000',
