@@ -35,7 +35,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-vue": "^7.11.1",
-    "node-sass": "^6.0.0",
+    "node-sass": "^7.0.0",
     "nyc": "^15.1.0",
     "sass-loader": "^10.1.1",
     "sass-resources-loader": "^2.0.1",
